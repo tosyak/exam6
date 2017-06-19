@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/font-awesome.css")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet")
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/slick.css")
+    link(rel="stylesheet", href="css/slick-theme.css")
+    link(rel="stylesheet", href="css/style.css")
+    title= title
+  body
+    include includes/header.pug
+    include includes/slider.pug
+    include includes/services.pug
+    include includes/comments.pug
+    include includes/partners.pug
+    include includes/team.pug
+
+
+
+
+    //- each book in books
+    //-   .box 
+    //-     h3= book.title
+    //-     p= book.author
+
+    script(src="vendor/jquery/jquery-3.1.1.min.js")
+    script(src="vendor/slick.js")
+    script(src="vendor/smooth-scroll.min.js")
+    script(src="js/main.js")  
+        
+    

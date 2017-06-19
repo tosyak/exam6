@@ -1,0 +1,103 @@
+.comments-wrap
+    background: #fafafa
+    margin: 66px 0 0 0
+.section-title
+    text-align: center
+    padding: 0 0 48px 0
+    &__title
+        font-size: 54px
+        color: #222222
+        font-weight: normal
+        margin: 0 0 0 0
+        padding: 84px 0 0 0
+        &--bold
+        font-weight: bold
+    &__desc
+        font-size: 18px
+        color: #777777
+.comments
+    padding-bottom: 69px
+.comments__item--wrap
+    @extend %row
+    margin-bottom: 30px
+.comments__user
+        @extend %col
+        width: 24%
+        height: 24%
+        display: block
+        +img-rounded
+.comments__item--right
+        @extend %col
+        width: 68%      
+        border: 1px solid #f1f1f1       
+        margin: 32px 0 18px 43px
+        position: relative
+        background: #fff
+        padding: 37px 22px 0 82px
+        &::before           
+            display: block
+            content: ''
+            position: absolute
+            right: 100%
+            width: 0
+            height: 0
+            border-style: solid
+            top: 70px
+            border-color: transparent #f1f1f1 transparent transparent 
+            border-width: 11px
+        &::after            
+            display: block
+            content: ''
+            position: absolute
+            right: 100%
+            width: 0
+            height: 0
+            border-style: solid
+            top: 71px
+            border-color: transparent #fff transparent transparent 
+            border-width: 10px
+
+.comments__item--left
+    @extend %col
+    width: 68%      
+    border: 1px solid #f1f1f1       
+    margin: 32px 34px 18px 37px
+    position: relative
+    background: #fff
+    padding: 37px 22px 0 82px
+    &::before           
+        display: block
+        content: ''
+        position: absolute
+        left: 100%
+        width: 0
+        height: 0
+        border-style: solid
+        top: 70px
+        border-color: transparent transparent transparent #f1f1f1
+        border-width: 11px
+    &::after            
+        display: block
+        content: ''
+        position: absolute
+        left: 100%
+        width: 0
+        height: 0
+        border-style: solid
+        top: 71px
+        border-color: transparent transparent transparent #fff
+        border-width: 10px
+
+.comments__item--left,
+.comments__item--right            
+    &__comment
+        margin: 0 0 0 0
+        font-size: 20px
+        color: #777777
+        line-height: 31px
+    &__author
+        margin: 11px 0 0 0
+        font-size: 16px
+        color: #7690c5
+        display: block
+

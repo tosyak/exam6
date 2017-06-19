@@ -1,0 +1,41 @@
+.team-wrap
+    background: #000
+    // padding: 40px 0
+.team
+    @extend %row
+    padding: 24px 44px 0 44px
+    justify-content: space-around
+    &__item
+        @extend %col
+        margin: 0 0 0 0
+        color: #fff
+        text-align: center
+        &__img
+            +img-rounded
+        &__name
+            font-size: 14px
+            font-weight: bold
+            margin: 14px 0 1px 0
+        &__position
+            font-size: 14px
+            font-weight: normal
+.social__link
+    display: inline-block
+    color: #fff
+    border: 2px solid #fff
+    border-radius: 50%
+    position: relative
+    padding: 18px
+    margin: 11px 4px 0 4px
+.social__link .fa
+    position: absolute
+    top: 9px
+    left: 9px
+    font-size: 20px
+.social__link .fa-facebook
+    left: 13px
+.team__text 
+    color: #fff
+    text-align: center
+    padding: 40px 60px
+    font-size: 16px

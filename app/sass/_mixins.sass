@@ -1,0 +1,77 @@
+%clearfix
+	&::after
+		content: ''
+		display: table
+		width: 100%
+		clear: both
+
+%no-list
+	padding: 0
+	margin: 0
+	list-style: none
+
+%td-none
+	display: block
+	text-decoration: none
+=size($size)
+	width: ($size)
+	height: ($size)
+
+%btn
+	color: #fff
+	padding: 10px 15px	
+	font:
+		size: 15px
+		family: arial
+		weight: normal
+	text:
+		transform: uppercase
+		decoration: none
+		align: center
+
+=btn($bgcolor)
+	color: $bgcolor
+	@extend %btn
+
+$icon-sprite: 'one', 'two', 'three'
+%icon-sprite
+	display: inline-block
+	position:relative
+	border-radius: 50%
+	+size(100px)
+	background: red	
+	&::after
+		position: absolute
+		top: 10px
+		left: 10px		
+		+size(55px)
+		background: red url(../) no-repeat
+		
+// @for $i from 0 to lenght($icon-sprite)
+// 	.icon-sprite-#{nth($icon-sprite, $i+1)}
+// 		@extend %icon-sprite
+// 		&::after
+// 			background-position-x: -(50px * $i)
+
+
+
+// $tablet-up: 'screen and (min-width:600px)'
+// =tablet
+// 	@media #{$tablet-up}
+// 		@content
+	
+$desctop-up: 'screen and (min-width:900px)'
+=desctop
+	@media screen and (min-width:900px)
+		@content
+
+=img-rounded
+	border: 5px solid #fff
+	border-radius: 50%
+
+=triangle-left
+	width: 0
+	height: 0
+	border-style: solid
+	border-width: 50px 200px 50px 0
+	border-color: transparent #ffffff transparent transparent

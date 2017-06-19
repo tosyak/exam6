@@ -1,0 +1,27 @@
+.container    
+    max-width: 940px
+    min-width: 320px
+    width: 100%
+    box-sizing: border-box
+    margin: 0 auto
+    padding: 0 15px
+    +desctop
+        padding: 0
+
+%row 
+	display: block
+	display: flex
+	flex-wrap: wrap
+	align-items: stretch
+
+%col 
+    float: left
+    box-sizing: border-box
+
+%col-right 
+    float: right
+    box-sizing: border-box
+
+.col-sibebar
+	width: 100%
+	flex: 0 0 100%

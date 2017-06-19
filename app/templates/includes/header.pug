@@ -1,0 +1,10 @@
+.container
+    header#home.header
+        .container.clearfix
+            .header__logo
+                a(href="#"): img.header__logo__image(src="images/logo.png" width='139' height='28'  alt="logo")
+            a.menu__mobile(href="#"): i.fa.fa-bars(aria-hidden="true")         
+
+            nav.menu.displaynone
+                each item in menu_items
+                    a(a data-scroll href="#{item}").menu__item=item
